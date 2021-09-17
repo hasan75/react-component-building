@@ -13,10 +13,14 @@ function App() {
 }
 
 function Product(props){
-  
-  
+  const productStyle = {
+    border: '3px solid grey',
+    borderRadius: '20px',
+    padding: '15px'
+  }
+  const {name, price} = props;
   return(
-    <div className="product">
+    <div className="product" style={productStyle}>
       <h2>Name: {name}</h2>
       <h4>Price: {price}</h4>
     </div>
